@@ -1,0 +1,19 @@
+Overall psuedocode
+
+first I need to generate the signal
+then I need to have an array for my signal 
+
+then I need an array for the FIR filter vector coefficients 
+
+then I i put the samples into a buffer 
+
+thenn I take the individual samples from the buffer and pass each one through the filter
+
+when i pass the sample through the filter I'm multiplying the sample by each coefficient 
+one at a time the output of each multiplication is a coefficient that has been filtered. 
+
+so I need three arrays 
+h is the coefficient array
+signal_input is the generated signal 
+signal_output is the filtered signal 
+
