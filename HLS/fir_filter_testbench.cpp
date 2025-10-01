@@ -8,13 +8,13 @@
 typedef int data_t;
 
 // Prototype for the function we are testing (the "Design Under Test" or DUT)
-void fir_filter(data_t *output, data_t input);
+void fir_optimized(data_t *output, data_t input);
 
 // This is the main function for our testbench.
 // It is NOT synthesizable and runs only on the host computer for verification.
 int main() {
     // --- Testbench Setup ---
-    const int NUM_SAMPLES = 256;
+    const int NUM_SAMPLES = 2000;
     std::vector<data_t> input_signal(NUM_SAMPLES);
     std::vector<data_t> output_signal;
     data_t single_output;
@@ -32,7 +32,7 @@ int main() {
     // --- Run the Simulation ---
     // Call the HLS filter function for each sample, just like the hardware would.
     for (int i = 0; i < NUM_SAMPLES; ++i) {
-        fir_filter(&single_output, input_signal[i]);
+        fir_optimized(&single_output, input_signal[i]);
         output_signal.push_back(single_output);
     }
 

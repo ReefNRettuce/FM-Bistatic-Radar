@@ -1,0 +1,59 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../HLS/symmetrical_fir_filter.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/workspace/FM-Bistatic-Radar/HLS/symmetrical_fir_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../HLS/fir_filter_testbench.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/workspace/FM-Bistatic-Radar/HLS/fir_filter_testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fir_optimized' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+   Compiling ../../../../../HLS/symmetrical_fir_filter.cpp in debug mode
+csim.mk:94: recipe for target 'obj/symmetrical_fir_filter.o' failed
+In file included from ../../../../../HLS/symmetrical_fir_filter.cpp:3:
+In file included from C:/Xilinx/2025.1/Vitis/include/ap_int.h:10:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_common.h:677:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/ap_private.h:68:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_half.h:26:
+In file included from C:/Xilinx/2025.1/Vitis/include/etc/hls_half_fpo.h:19:
+In file included from C:/Xilinx/2025.1/Vitis/include/hls_fpo.h:140:
+In file included from C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:150:
+C:/Xilinx/2025.1/Vitis/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+C:/Xilinx/2025.1/Vitis/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+../../../../../HLS/symmetrical_fir_filter.cpp:17:29: error: use of undeclared identifier 'N_TAPS'
+    static data_t shift_reg[N_TAPS] = {0};
+                            ^
+../../../../../HLS/symmetrical_fir_filter.cpp:22:18: error: use of undeclared identifier 'N_TAPS'
+    for (int i = N_TAPS - 1; i > 0; i--) {
+                 ^
+../../../../../HLS/symmetrical_fir_filter.cpp:32:26: error: use of undeclared identifier 'N_TAPS'
+    for (int i = 0; i < (N_TAPS / 2); i++) {
+                         ^
+../../../../../HLS/symmetrical_fir_filter.cpp:33:59: error: use of undeclared identifier 'N_TAPS'
+        data_t pre_add_result = shift_reg[i] + shift_reg[(N_TAPS - 1) - i];
+                                                          ^
+../../../../../HLS/symmetrical_fir_filter.cpp:39:28: error: use of undeclared identifier 'N_TAPS'
+    int center_tap_index = N_TAPS / 2;
+                           ^
+1 warning and 5 errors generated.
+make: *** [obj/symmetrical_fir_filter.o] Error 1
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+ERROR: 4
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.901 seconds; peak allocated memory: 158.191 MB.

@@ -1,0 +1,3 @@
+relativeroot=C:/workspace/FM-Bistatic-Radar/fir_filter
+original_argv=-c --mode hls --config C:\workspace\FM-Bistatic-Radar\fir_filter\hls_config.cfg --work_dir fir_optimized 
+

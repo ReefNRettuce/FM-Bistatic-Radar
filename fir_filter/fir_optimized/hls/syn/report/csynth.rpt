@@ -1,0 +1,136 @@
+
+
+================================================================
+== Synthesis Summary Report of 'fir_optimized'
+================================================================
++ General Information: 
+    * Date:           Tue Sep 30 23:47:10 2025
+    * Version:        2025.1 (Build 6135595 on May 21 2025)
+    * Project:        fir_optimized
+    * Solution:       hls (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg400-1
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +-----------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |     Modules     | Issue|      |      Latency     | Iteration|         | Trip |          |      |        |           |           |     |
+    |     & Loops     | Type | Slack| (cycles)|  (ns)  |  Latency | Interval| Count| Pipelined| BRAM |   DSP  |     FF    |    LUT    | URAM|
+    +-----------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+    |+ fir_optimized  |     -|  0.38|        7|  70.000|         -|        3|     -|       yes|     -|  6 (2%)|  3637 (3%)|  3030 (5%)|    -|
+    +-----------------+------+------+---------+--------+----------+---------+------+----------+------+--------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* Other Ports
++----------+---------+-----------+----------+
+| Port     | Mode    | Direction | Bitwidth |
++----------+---------+-----------+----------+
+| input_r  | ap_none | in        | 32       |
+| output_r | ap_vld  | out       | 32       |
++----------+---------+-----------+----------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------------------------------+
+| Interface | Type       | Ports                             |
++-----------+------------+-----------------------------------+
+| ap_clk    | clock      | ap_clk                            |
+| ap_rst    | reset      | ap_rst                            |
+| ap_ctrl   | ap_ctrl_hs | ap_done ap_idle ap_ready ap_start |
++-----------+------------+-----------------------------------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+----------+
+| Argument | Direction | Datatype |
++----------+-----------+----------+
+| output   | out       | int*     |
+| input    | in        | int      |
++----------+-----------+----------+
+
+* SW-to-HW Mapping
++----------+-----------------+---------+
+| Argument | HW Interface    | HW Type |
++----------+-----------------+---------+
+| output   | output_r        | port    |
+| output   | output_r_ap_vld | port    |
+| input    | input_r         | port    |
++----------+-----------------+---------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| Name                     | DSP | Pragma | Variable    | Op  | Impl   | Latency |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+| + fir_optimized          | 6   |        |             |     |        |         |
+|   add_ln48_fu_312_p2     |     |        | add_ln48    | add | fabric | 0       |
+|   add_ln48_1_fu_501_p2   |     |        | add_ln48_1  | add | fabric | 0       |
+|   add_ln48_2_fu_506_p2   |     |        | add_ln48_2  | add | fabric | 0       |
+|   add_ln48_3_fu_512_p2   |     |        | add_ln48_3  | add | fabric | 0       |
+|   add_ln48_4_fu_518_p2   |     |        | add_ln48_4  | add | fabric | 0       |
+|   add_ln48_5_fu_318_p2   |     |        | add_ln48_5  | add | fabric | 0       |
+|   add_ln48_6_fu_324_p2   |     |        | add_ln48_6  | add | fabric | 0       |
+|   add_ln48_7_fu_523_p2   |     |        | add_ln48_7  | add | fabric | 0       |
+|   add_ln48_8_fu_528_p2   |     |        | add_ln48_8  | add | fabric | 0       |
+|   add_ln48_9_fu_534_p2   |     |        | add_ln48_9  | add | fabric | 0       |
+|   add_ln48_10_fu_330_p2  |     |        | add_ln48_10 | add | fabric | 0       |
+|   add_ln48_11_fu_539_p2  |     |        | add_ln48_11 | add | fabric | 0       |
+|   add_ln48_12_fu_544_p2  |     |        | add_ln48_12 | add | fabric | 0       |
+|   add_ln48_13_fu_550_p2  |     |        | add_ln48_13 | add | fabric | 0       |
+|   mul_32s_12s_32_2_1_U1  | 2   |        | mul_ln48    | mul | auto   | 1       |
+|   sub_ln48_fu_1018_p2    |     |        | sub_ln48    | sub | fabric | 0       |
+|   sub_ln48_6_fu_1072_p2  |     |        | sub_ln48_6  | sub | fabric | 0       |
+|   mul_32s_12s_32_2_1_U2  | 2   |        | mul_ln48_1  | mul | auto   | 1       |
+|   mul_32s_11s_32_2_1_U3  | 2   |        | mul_ln48_2  | mul | auto   | 1       |
+|   mul_32s_12s_32_2_1_U1  | 2   |        | mul_ln48_3  | mul | auto   | 1       |
+|   mul_32s_12s_32_2_1_U2  | 2   |        | mul_ln48_4  | mul | auto   | 1       |
+|   mul_32s_11s_32_2_1_U3  | 2   |        | mul_ln48_5  | mul | auto   | 1       |
+|   sub_ln48_7_fu_596_p2   |     |        | sub_ln48_7  | sub | fabric | 0       |
+|   sub_ln48_10_fu_1088_p2 |     |        | sub_ln48_10 | sub | fabric | 0       |
+|   sub_ln48_11_fu_885_p2  |     |        | sub_ln48_11 | sub | fabric | 0       |
+|   add_ln48_14_fu_907_p2  |     |        | add_ln48_14 | add | fabric | 0       |
+|   add_ln48_15_fu_913_p2  |     |        | add_ln48_15 | add | fabric | 0       |
+|   add_ln48_16_fu_919_p2  |     |        | add_ln48_16 | add | fabric | 0       |
+|   add_ln48_17_fu_925_p2  |     |        | add_ln48_17 | add | fabric | 0       |
+|   add_ln48_18_fu_931_p2  |     |        | add_ln48_18 | add | fabric | 0       |
+|   add_ln48_19_fu_937_p2  |     |        | add_ln48_19 | add | fabric | 0       |
+|   add_ln48_20_fu_943_p2  |     |        | add_ln48_20 | add | fabric | 0       |
+|   add_ln48_21_fu_949_p2  |     |        | add_ln48_21 | add | fabric | 0       |
+|   add_ln48_22_fu_955_p2  |     |        | add_ln48_22 | add | fabric | 0       |
+|   sub_ln48_14_fu_1120_p2 |     |        | sub_ln48_14 | sub | fabric | 0       |
+|   sub_ln48_17_fu_1136_p2 |     |        | sub_ln48_17 | sub | fabric | 0       |
+|   mul_32s_12s_32_2_1_U1  | 2   |        | mul_ln48_6  | mul | auto   | 1       |
+|   sub_ln48_18_fu_1241_p2 |     |        | sub_ln48_18 | sub | fabric | 0       |
+|   mul_32s_12s_32_2_1_U2  | 2   |        | mul_ln48_7  | mul | auto   | 1       |
+|   mul_32s_11s_32_2_1_U3  | 2   |        | mul_ln48_8  | mul | auto   | 1       |
+|   add_ln48_38_fu_1219_p2 |     |        | add_ln48_38 | add | fabric | 0       |
++--------------------------+-----+--------+-------------+-----+--------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
+  No bind storage info in design
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------------+-----------------------------+------------------------------------------------------------------+
+| Type            | Options                     | Location                                                         |
++-----------------+-----------------------------+------------------------------------------------------------------+
+| ARRAY_PARTITION | variable=shift_reg complete | ../HLS/symmetrical_fir_filter.cpp:26 in fir_optimized, shift_reg |
+| UNROLL          |                             | ../HLS/symmetrical_fir_filter.cpp:32 in fir_optimized            |
+| PIPELINE        | ii=3                        | ../HLS/symmetrical_fir_filter.cpp:39 in fir_optimized            |
++-----------------+-----------------------------+------------------------------------------------------------------+
+
+

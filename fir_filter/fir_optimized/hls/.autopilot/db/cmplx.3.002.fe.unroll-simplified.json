@@ -1,0 +1,21 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 25,
+    "file": "symmetrical_fir_filter.cpp",
+    "fileloc": 9,
+    "instructions": 164,
+    "loads": {
+      "G": 46
+    },
+    "memory_accesses": 94,
+    "name": "fir_optimized",
+    "stores": {
+      "G": 47,
+      "T": 1
+    },
+    "total_instructions": 164
+  }
+}

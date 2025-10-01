@@ -1,0 +1,25 @@
+  **** HLS Build v2025.1 6135595
+INFO: [HLS 200-2005] Using work_dir C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json
+INFO: [HLS 200-10] Creating and opening component 'C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized'.
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-2174] Applying component config ini file C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../HLS/symmetrical_fir_filter.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'C:/workspace/FM-Bistatic-Radar/HLS/symmetrical_fir_filter.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../HLS/fir_filter_testbench.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding test bench file 'C:/workspace/FM-Bistatic-Radar/HLS/fir_filter_testbench.cpp' to the project
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fir_optimized' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2025.1%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(5)
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.829 seconds; current allocated memory: 158.281 MB.
+INFO: [HLS 200-10] Analyzing design file '../HLS/symmetrical_fir_filter.cpp' ... 
+ERROR: [HLS 207-3776] use of undeclared identifier 'shift_reg' (../HLS/symmetrical_fir_filter.cpp:16:38)
+WARNING: [HLS 207-5557] invalid variable expr  (../HLS/symmetrical_fir_filter.cpp:16:38)
+ERROR:  
+INFO: [HLS 200-112] Total CPU user time: 1 seconds. Total CPU system time: 1 seconds. Total elapsed time: 2.578 seconds; peak allocated memory: 159.789 MB.

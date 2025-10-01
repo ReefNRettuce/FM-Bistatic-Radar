@@ -1,0 +1,13 @@
+21:05:52 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+21:05:52 INFO  : cmd.exe, /C, empyro.bat repo -st   C:\Xilinx\2025.1\Vitis\data\embeddedsw
+21:05:55 INFO  : [INFO]: Initializing repositories
+21:05:55 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+21:05:55 INFO  : Successfully created repository data at C:\workspace\FM-Bistatic-Radar/_ide\.wsdata
+21:05:55 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife9170306420488869420 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+21:05:56 INFO  : Embedded Template List generated successfully
+21:33:48 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar\fir_filter
+23:48:20 INFO  : connection terminated
+23:48:20 INFO  : connection terminated
+23:48:20 INFO  : scheduling shutdown timer for 2 seconds ...
+23:48:22 INFO  : Terminating Vitis C++ Server
+23:48:22 INFO  : Vitis C++ Server terminated

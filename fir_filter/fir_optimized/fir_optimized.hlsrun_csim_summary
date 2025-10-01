@@ -1,0 +1,156 @@
+<ENTRY>
+{
+ "thisFile": "C:/workspace\\FM-Bistatic-Radar\\fir_filter\\fir_optimized\\fir_optimized.hlsrun_csim_summary",
+ "connectId": "",
+ "serverToken": "",
+ "timestamp": "0"
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_CmdStep",
+ "dateTimestamp": "09/30/25 23:45:50",
+ "timestampMillis": "1759293950319",
+ "buildStep": {
+  "cmdId": "bf97b365-094d-46fd-a9d1-8dd7cc5c366e",
+  "name": "vitis-run",
+  "logFile": "C:/workspace\\FM-Bistatic-Radar\\fir_filter\\fir_optimized\\logs\\fir_optimized.steps.log",
+  "commandLine": "C:/Xilinx/2025.1/Vitis/bin/unwrapped/win64.o/vitis-run.exe  --mode hls --csim --config C:\\workspace\\FM-Bistatic-Radar\\fir_filter\\hls_config.cfg --work_dir fir_optimized ",
+  "args": [
+   "--mode",
+   "hls",
+   "--csim",
+   "--config",
+   "C:\\workspace\\FM-Bistatic-Radar\\fir_filter\\hls_config.cfg",
+   "--work_dir",
+   "fir_optimized"
+  ],
+  "iniFiles": [],
+  "cwd": "C:\\workspace\\FM-Bistatic-Radar\\fir_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/30/25 23:45:50",
+ "timestampMillis": "1759293950320",
+ "status": {
+  "cmdId": "bf97b365-094d-46fd-a9d1-8dd7cc5c366e",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_FlowMetaData",
+ "dateTimestamp": "09/30/25 23:45:53",
+ "timestampMillis": "1759293953322",
+ "buildSummary": {
+  "hardwarePlatform": "",
+  "hardwareDsa": "",
+  "platformDirectory": "",
+  "runtime": "",
+  "systemConfig": "",
+  "flow": "BF_RUN",
+  "target": "TT_HLS_C_SIM",
+  "kernels": [
+   {
+    "base": {
+     "type": "KERNEL",
+     "name": "fir_optimized",
+     "file": "",
+     "reports": [],
+     "uuid": ""
+    },
+    "sources": [
+     "C:/workspace\\FM-Bistatic-Radar\\HLS\\symmetrical_fir_filter.cpp"
+    ],
+    "psSources": [],
+    "cuNames": [],
+    "type": "HLS",
+    "frequency": 0,
+    "freqUnits": ""
+   }
+  ],
+  "toolVersion": "2025.1"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_SubCmdStep",
+ "dateTimestamp": "09/30/25 23:45:53",
+ "timestampMillis": "1759293953323",
+ "buildStep": {
+  "cmdId": "24c52ac5-c93c-4a7b-b89f-aa8b448437fe",
+  "name": "",
+  "logFile": "C:/workspace\\FM-Bistatic-Radar\\fir_filter\\fir_optimized\\hls\\hls.log",
+  "commandLine": "",
+  "args": [],
+  "iniFiles": [],
+  "cwd": "C:\\workspace\\FM-Bistatic-Radar\\fir_filter"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/30/25 23:45:53",
+ "timestampMillis": "1759293953324",
+ "status": {
+  "cmdId": "24c52ac5-c93c-4a7b-b89f-aa8b448437fe",
+  "state": "CS_RUNNING"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/30/25 23:45:54",
+ "timestampMillis": "1759293954633",
+ "status": {
+  "cmdId": "24c52ac5-c93c-4a7b-b89f-aa8b448437fe",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Status",
+ "dateTimestamp": "09/30/25 23:45:54",
+ "timestampMillis": "1759293954701",
+ "status": {
+  "cmdId": "bf97b365-094d-46fd-a9d1-8dd7cc5c366e",
+  "state": "CS_PASSED"
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/30/25 23:45:54",
+ "timestampMillis": "1759293954701",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "HTML",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>
+<ENTRY>
+{
+ "type": "ET_Report",
+ "dateTimestamp": "09/30/25 23:45:54",
+ "timestampMillis": "1759293954702",
+ "report": {
+  "path": "",
+  "name": "",
+  "fileType": "BINARY_PROTOBUF",
+  "reportType": "GLOBAL_RULECHECK_GUIDANCE",
+  "cmdId": ""
+ }
+}
+</ENTRY>

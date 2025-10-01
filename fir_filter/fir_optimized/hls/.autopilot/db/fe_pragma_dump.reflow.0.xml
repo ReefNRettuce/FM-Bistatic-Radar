@@ -1,0 +1,5 @@
+<pragmas>
+<pragma file="../HLS/symmetrical_fir_filter.cpp" line="39" pragmaType="pipeline" parentfunction="fir_optimized" off="0" ii="3" style=""/>
+<pragma file="../HLS/symmetrical_fir_filter.cpp" line="32" pragmaType="unroll" parentfunction="fir_optimized" factor="-1" skip_exit_check="0"/>
+<pragma file="../HLS/symmetrical_fir_filter.cpp" line="26" pragmaType="array_partition" parentfunction="fir_optimized" dim="1" factor="0" mode="complete" dynamic="0" variable="_ZZ13fir_optimizedPiiE9shift_reg"/>
+</pragmas>

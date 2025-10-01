@@ -1,0 +1,8 @@
+{
+  "workspaceRoot": "C:\\workspace\\FM-Bistatic-Radar",
+  "mapping": {
+    "fir_filter\\..\\HLS\\symmetrical_fir_filter.cpp": "fir_filter",
+    "fir_filter\\..\\HLS\\fir_filter_main_v2_tb.cpp": "fir_filter",
+    "fir_filter\\..\\HLS\\fir_filter_testbench.cpp": "fir_filter"
+  }
+}
