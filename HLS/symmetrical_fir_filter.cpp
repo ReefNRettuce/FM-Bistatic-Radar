@@ -24,7 +24,7 @@ void fir_optimized(data_t *output, data_t input) {
     static data_t shift_reg[n_taps] = {0};
     acc_t acc = 0;
 
-     #pragma HLS ARRAY_PARTITION variable=shift_reg complete
+    #pragma HLS ARRAY_PARTITION variable=shift_reg complete
 
     // --- SHIFTING LOGIC ---
     // This loop shifts all 47 elements. Unrolling it fully is the most efficient.
@@ -37,7 +37,7 @@ void fir_optimized(data_t *output, data_t input) {
 
     // --- FOLDED MAC LOGIC (THE FIX) ---
     Folded_MAC_Loop:
-    #pragma HLS PIPELINE II=3 // Or II=1 to test the other way
+    #pragma HLS PIPELINE II=1 // Or II=1 to test the other way
     // The loop MUST iterate only over the symmetric pairs.
     // For a 47-tap filter, there are 23 pairs. So the loop runs from i=0 to 22.
     for (int i = 0; i < (n_taps / 2); i++) {

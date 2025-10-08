@@ -1,3 +1,6 @@
-fir_optimized_mul_32s_12s_32_2_1
+fir_optimized_mul_32s_9s_32_2_1
+fir_optimized_mul_32s_8s_32_2_1
 fir_optimized_mul_32s_11s_32_2_1
+fir_optimized_mul_32s_12s_32_2_1
+fir_optimized_mul_32s_10s_32_2_1
 fir_optimized

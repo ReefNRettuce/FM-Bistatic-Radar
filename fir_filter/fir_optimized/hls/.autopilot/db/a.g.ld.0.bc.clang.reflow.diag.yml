@@ -1,17 +1,17 @@
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 42, Column: 19 }
+DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 43, Column: 19 }
 Function:        _Z13fir_optimizedPii
 Args:            
   - String:          'Loop '''
-  - LoopName:        VITIS_LOOP_42_1
+  - LoopName:        VITIS_LOOP_43_1
   - String:          ''' is marked as complete unroll implied by the pipeline pragma'
 ...
 --- !Passed
 Pass:            reflow-infer-unroll
 Name:            ImplicitUnroll
-DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 31, Column: 5 }
+DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 32, Column: 5 }
 Function:        _Z13fir_optimizedPii
 Args:            
   - String:          'Loop '''
@@ -25,9 +25,9 @@ DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 9, Column: 0 }
 Function:        _Z13fir_optimizedPii
 Args:            
   - String:          'Unrolling loop '''
-  - LoopName:        VITIS_LOOP_42_1
+  - LoopName:        VITIS_LOOP_43_1
   - String:          ''' ('
-  - LoopLoc:         '../HLS/symmetrical_fir_filter.cpp:42:19'
+  - LoopLoc:         '../HLS/symmetrical_fir_filter.cpp:43:19'
   - String:          ') '
   - String:          'in function '''
   - String:          fir_optimized
@@ -43,7 +43,7 @@ Args:
   - String:          'Unrolling loop '''
   - LoopName:        Shift_Loop
   - String:          ''' ('
-  - LoopLoc:         '../HLS/symmetrical_fir_filter.cpp:31:5'
+  - LoopLoc:         '../HLS/symmetrical_fir_filter.cpp:32:5'
   - String:          ') '
   - String:          'in function '''
   - String:          fir_optimized
@@ -65,7 +65,7 @@ Args:
 --- !Passed
 Pass:            reflow-array-partition
 Name:            ArrayXform
-DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 23, Column: 0 }
+DebugLoc:        { File: ../HLS/symmetrical_fir_filter.cpp, Line: 24, Column: 0 }
 Function:        _Z13fir_optimizedPii
 Args:            
   - String:          'Applying '

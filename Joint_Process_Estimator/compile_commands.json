@@ -1,0 +1,50 @@
+[
+  {
+    "directory": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\gradiant_adaptive_lattice.cpp"
+    ],
+    "file": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\gradiant_adaptive_lattice.cpp"
+  },
+  {
+    "directory": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\NLMS_TDL.cpp"
+    ],
+    "file": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\NLMS_TDL.cpp"
+  },
+  {
+    "directory": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\jpe.cpp"
+    ],
+    "file": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\jpe.cpp"
+  },
+  {
+    "directory": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\JPE_test_bench.cpp"
+    ],
+    "file": "C:\\workspace\\FM-Bistatic-Radar\\Joint_Process_Estimator\\JPE_test_bench.cpp"
+  }
+]

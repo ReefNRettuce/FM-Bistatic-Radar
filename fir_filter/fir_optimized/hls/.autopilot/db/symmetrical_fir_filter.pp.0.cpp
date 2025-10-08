@@ -6215,6 +6215,7 @@ __attribute__((sdx_kernel("fir_optimized", 0))) void fir_optimized(data_t *outpu
 
 
     coeff_t coefficients[24] = {
+
         7425, 6141, 3984, 1619, -295, -1341, -1456, -904, -114, 510, 742, 576,
         173, -246, -514, -569, -453, -260, -84, 24, 59, 48, 25
 
@@ -6241,10 +6242,10 @@ __attribute__((sdx_kernel("fir_optimized", 0))) void fir_optimized(data_t *outpu
 
 
     Folded_MAC_Loop:
-#pragma HLS PIPELINE II=3
+#pragma HLS PIPELINE II=1
 
 
- VITIS_LOOP_42_1: for (int i = 0; i < (47 / 2); i++) {
+ VITIS_LOOP_43_1: for (int i = 0; i < (47 / 2); i++) {
 
         data_t pre_add_result = shift_reg[i] + shift_reg[(47 - 1) - i];
 

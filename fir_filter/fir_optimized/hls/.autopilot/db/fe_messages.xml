@@ -2,28 +2,28 @@
     <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="directive:1:9" msg_body="HLS pragma dump">
         <args ARG_PragmaContext="directive" ARG_PragmaFunction="fir_optimized" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=fir_optimized" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../HLS/symmetrical_fir_filter.cpp:26:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../HLS/symmetrical_fir_filter.cpp:27:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fir_optimized" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=shift_reg complete" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../HLS/symmetrical_fir_filter.cpp:32:9" msg_body="HLS pragma dump">
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../HLS/symmetrical_fir_filter.cpp:33:9" msg_body="HLS pragma dump">
         <args ARG_PragmaFunction="fir_optimized" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../HLS/symmetrical_fir_filter.cpp:39:9" msg_body="HLS pragma dump">
-        <args ARG_PragmaFunction="fir_optimized" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=3" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="../HLS/symmetrical_fir_filter.cpp:40:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="fir_optimized" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:42:19" msg_body="Loop 'VITIS_LOOP_42_1' is marked as complete unroll implied by the pipeline pragma">
-        <args LoopName="VITIS_LOOP_42_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:43:19" msg_body="Loop 'VITIS_LOOP_43_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_43_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:31:5" msg_body="Loop 'Shift_Loop' is marked as complete unroll implied by the pipeline pragma">
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:32:5" msg_body="Loop 'Shift_Loop' is marked as complete unroll implied by the pipeline pragma">
         <args LoopName="Shift_Loop"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_42_1' (../HLS/symmetrical_fir_filter.cpp:42:19) in function 'fir_optimized' completely with a factor of 23">
-        <args Factor="23" LoopLoc="../HLS/symmetrical_fir_filter.cpp:42:19" LoopName="VITIS_LOOP_42_1"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:9:0" msg_body="Unrolling loop 'VITIS_LOOP_43_1' (../HLS/symmetrical_fir_filter.cpp:43:19) in function 'fir_optimized' completely with a factor of 23">
+        <args Factor="23" LoopLoc="../HLS/symmetrical_fir_filter.cpp:43:19" LoopName="VITIS_LOOP_43_1"/>
     </msg>
-    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:9:0" msg_body="Unrolling loop 'Shift_Loop' (../HLS/symmetrical_fir_filter.cpp:31:5) in function 'fir_optimized' completely with a factor of 46">
-        <args Factor="46" LoopLoc="../HLS/symmetrical_fir_filter.cpp:31:5" LoopName="Shift_Loop"/>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:9:0" msg_body="Unrolling loop 'Shift_Loop' (../HLS/symmetrical_fir_filter.cpp:32:5) in function 'fir_optimized' completely with a factor of 46">
+        <args Factor="46" LoopLoc="../HLS/symmetrical_fir_filter.cpp:32:5" LoopName="Shift_Loop"/>
     </msg>
-    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:23:0" msg_body="Applying array_partition to '_ZZ13fir_optimizedPiiE9shift_reg': Complete partitioning on dimension 1.">
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../HLS/symmetrical_fir_filter.cpp:24:0" msg_body="Applying array_partition to '_ZZ13fir_optimizedPiiE9shift_reg': Complete partitioning on dimension 1.">
         <args Dim="1" Mode="Complete" UOName="_ZZ13fir_optimizedPiiE9shift_reg"/>
     </msg>
 </xilinx:hls_fe_msgs>

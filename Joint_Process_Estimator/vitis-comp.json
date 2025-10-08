@@ -1,0 +1,13 @@
+{
+  "name": "Joint_Process_Estimator",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "Joint_Process_Estimator"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}

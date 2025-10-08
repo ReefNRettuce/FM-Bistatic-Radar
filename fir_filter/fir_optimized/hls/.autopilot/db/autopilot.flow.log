@@ -255,7 +255,7 @@ Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command         ap_source done; 0.136 sec.
+Command         ap_source done; 0.13 sec.
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
@@ -511,8 +511,8 @@ Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
-Command       ap_source done; 0.281 sec.
-INFO-FLOW: Workspace C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls opened at Tue Sep 30 23:46:56 -0500 2025
+Command       ap_source done; 0.259 sec.
+INFO-FLOW: Workspace C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls opened at Wed Oct 01 18:58:22 -0500 2025
 Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
 INFO: [HLS 200-1505] Using default flow_target 'vivado'
 Execute       send_msg_by_id INFO @200-2174@%s%s component C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg 
@@ -541,7 +541,7 @@ DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o
 DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
 DBG:HLSDevice: init success
 INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
-Command           create_platform done; 0.577 sec.
+Command           create_platform done; 0.555 sec.
 Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
@@ -556,16 +556,16 @@ Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xf
 Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
 Execute           ap_part_info -name xc7z020-clg400-1 -data info 
 Execute           config_compile -quiet -complex-mul-dsp=0 
-Command         set_part done; 0.665 sec.
+Command         set_part done; 0.634 sec.
 Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(5) 
 INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(5)
 Execute         config_export -format=ip_catalog 
-Command       apply_ini done; 0.682 sec.
+Command       apply_ini done; 0.65 sec.
 Execute       write_component -config C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg 
 Execute         send_msg_by_id INFO @200-2176@%s C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json 
 INFO: [HLS 200-2176] Writing Vitis IDE component file C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json
-Command     open_solution done; 0.99 sec.
-Command   open_component done; 0.993 sec.
+Command     open_solution done; 0.936 sec.
+Command   open_component done; 0.939 sec.
 Execute   apply_ini C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/config.cmdline -iscmdline 
 Execute   ::AP::init_summary_file csynth 
 Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
@@ -574,7 +574,7 @@ Execute     ap_part_info -name xc7z020-clg400-1 -data info
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/xilinx-performance-pragma-detector ../HLS/symmetrical_fir_filter.cpp -- -fhls -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -I /usr/include/x86_64-linux-gnu > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.cpp.xilinx-performance-pragma-detector.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.cpp.xilinx-performance-pragma-detector.err.log
 INFO-FLOW: Running SLX 'csynth' proc: ::SLX::run_csynth
 Execute     elaborate -effort=medium -skip_syncheck=0 -keep_printf=0 -skip_cdt=0 -skip_transform=0 -ng=0 -g=0 -from_csynth_design=1 
-INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.873 seconds; current allocated memory: 157.637 MB.
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 1.852 seconds; current allocated memory: 157.398 MB.
 Execute       set_directive_top fir_optimized -name=fir_optimized 
 INFO: [HLS 200-10] Analyzing design file '../HLS/symmetrical_fir_filter.cpp' ... 
 INFO-FLOW: Compiling one TU...
@@ -588,23 +588,23 @@ INFO-FLOW: Source syntax check for synthesis
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fsyntax-only -fhls -target fpga64-xilinx-linux-gnu C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/clang.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/clang.err.log
 Execute       clang_tidy xilinx-systemc-detector -desc systemc-detector C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp  -target fpga  -directive=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/.systemc_flag 
 INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-systemc-detector -import-directive=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/.systemc_flag -fix-errors C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.292 sec.
+Command       clang_tidy done; 0.403 sec.
 INFO-FLOW: Running: clang-tidy CDT preprocess 39
 Execute       clang_tidy xilinx-directive2pragma -desc directive2pragma C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp  -target fpga  -directive=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/all.directive.json 
 INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-directive2pragma -import-directive=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/all.directive.json -fix-errors C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0
-Command       clang_tidy done; 0.498 sec.
+Command       clang_tidy done; 0.54 sec.
 INFO-FLOW: Done: clang-tidy CDT preprocess 39 time: 0.5 seconds per iteration
 INFO-FLOW: Calling xilinx-label-all-loops ... 
 INFO-FLOW: Calling xilinx-aggregate-on-hls-vector ... 
 Execute       clang_tidy -errorcheck -desc loop-label xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp  -target fpga  
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -export-fixes=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.clang-tidy.loop-label.diag.yml -header-filter=.* --checks=-*,xilinx-label-all-loops,xilinx-aggregate-on-hls-vector,,xilinx-warn-mayneed-no-ctor-attribute -fix-errors C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.clang-tidy.loop-label.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.clang-tidy.loop-label.err.log
 Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/yaml.tcl 
-Command       clang_tidy done; 0.63 sec.
+Command       clang_tidy done; 0.729 sec.
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/xilinx-dataflow-lawyer -export-fixes=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.xilinx-dataflow-lawyer.diag.yml C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp -- - -target fpga -fhls -ferror-limit=0 -fstrict-dataflow > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.xilinx-dataflow-lawyer.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.xilinx-dataflow-lawyer.err.log
 Execute       ap_part_info -name xc7z020-clg400-1 -data info 
 INFO-FLOW: compiling source code to llvm bc
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang -foptimization-record-file=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.clang.diag.yml -mllvm -pass-remarks-missed=reflow|pasta|unroll|inline -mllvm -pass-remarks=reflow|pasta|unroll|inline -fno-limit-debug-info -fhls -flto -fno-exceptions -Wno-error=c++11-narrowing -hls-emit-hint-scope C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp -fno-math-errno -c -emit-llvm -mllvm -disable-llvm-optzns -Werror=implicit-function-declaration -Werror=implicit-hls-streams -Werror=return-type -Wpragmas -Wunused-parameter -Wdump-hls-pragmas -Wno-error=dump-hls-pragmas -hls-clock-period=10 -fno-threadsafe-statics -fno-use-cxa-atexit -target fpga64-xilinx-linux-gnu -D__VITIS_HLS__ -DAESL_SYN -D__SYNTHESIS__ -D__HLS_SYN__ -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot -I C:/Xilinx/2025.1/Vitis/common/technology/autopilot/ap_sysc -include etc/autopilot_ssdm_op.h -D__DSP48E1__ -g -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.bc {-hls-platform-db-name=C:/Xilinx/2025.1/Vitis\common/technology\xilinx/common/platform.db} -hls-platform-name=zynq_slow -device-resource-info=BRAM_280.000000_DSP_220.000000_FF_106400.000000_LUT_53200.000000_SLICE_13300.000000_URAM_0.000000 -device-name-info=xc7z020clg400-1 > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.clang.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.pp.0.cpp.clang.err.log
-INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 2.913 seconds; current allocated memory: 159.965 MB.
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 3.096 seconds; current allocated memory: 159.859 MB.
 INFO-FLOW: Linking Debug ...
 INFO-FLOW: Linking dut bc code.
 Execute       run_link_or_opt -out C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.0.bc -args  "C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.g.bc"  
@@ -616,12 +616,12 @@ INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
 INFO-FLOW: Linking math bc lib
 Execute       run_link_or_opt -out C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.2.m1.bc -args C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libhlsm_39.bc C:/Xilinx/2025.1/Vitis/win64/lib/libhlsmc++_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.1.lower.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libhlsm_39.bc C:/Xilinx/2025.1/Vitis/win64/lib/libhlsmc++_39.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.2.m1.bc > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.2.m1.bc.llvm-link.err.log
-Command       run_link_or_opt done; 1.24 sec.
+Command       run_link_or_opt done; 1.297 sec.
 Execute       run_link_or_opt -opt -out C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc -args C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=fir_optimized -reflow-float-conversion 
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/opt -pass-remarks-missed=reflow|pasta|unroll|inline -pass-remarks=reflow|pasta|unroll|inline -pass-remarks-output=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.diag.yml C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.2.m1.bc -reflow-globaldce -hls-top-function-name=fir_optimized -reflow-float-conversion -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc.opt.err.log
 INFO-FLOW: Running: gen_design_size_report post-opt
 INFO-FLOW: Done: gen_design_size_report post-opt time: 0 seconds per iteration
-Command       run_link_or_opt done; 0.56 sec.
+Command       run_link_or_opt done; 0.595 sec.
 Execute       run_link_or_opt -out C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.4.m2.bc -args C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libfloatconversion_39.bc 
 INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/llvm-link C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.3.fpc.bc -only-needed C:/Xilinx/2025.1/Vitis/win64/lib/libfloatconversion_39.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.4.m2.bc > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.4.m2.bc.llvm-link.err.log
 Execute       run_link_or_opt -opt -out C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.5.gdce.bc -args C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.ld.4.m2.bc -reflow-globaldce -hls-top-function-name=fir_optimized 
@@ -665,27 +665,27 @@ Execute       send_msg_by_id INFO @200-1995@%s%s%s 167 HW Transforms (step 1) (C
 INFO: [HLS 200-1995] There were 167 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details (C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/syn/report/csynth_design_size.rpt:2)
 Execute       send_msg_by_id INFO @200-1995@%s%s%s 169 HW Transforms (step 2) (C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/syn/report/csynth_design_size.rpt:2) 
 INFO: [HLS 200-1995] There were 169 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details (C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/syn/report/csynth_design_size.rpt:2)
-Command       send_msg_by_id done; 0.196 sec.
-INFO: [HLS 214-291] Loop 'VITIS_LOOP_42_1' is marked as complete unroll implied by the pipeline pragma (../HLS/symmetrical_fir_filter.cpp:42:19)
-INFO: [HLS 214-291] Loop 'Shift_Loop' is marked as complete unroll implied by the pipeline pragma (../HLS/symmetrical_fir_filter.cpp:31:5)
-INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_42_1' (../HLS/symmetrical_fir_filter.cpp:42:19) in function 'fir_optimized' completely with a factor of 23 (../HLS/symmetrical_fir_filter.cpp:9:0)
-INFO: [HLS 214-186] Unrolling loop 'Shift_Loop' (../HLS/symmetrical_fir_filter.cpp:31:5) in function 'fir_optimized' completely with a factor of 46 (../HLS/symmetrical_fir_filter.cpp:9:0)
-INFO: [HLS 214-248] Applying array_partition to '_ZZ13fir_optimizedPiiE9shift_reg': Complete partitioning on dimension 1. (../HLS/symmetrical_fir_filter.cpp:23:0)
+Command       send_msg_by_id done; 1.998 sec.
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_43_1' is marked as complete unroll implied by the pipeline pragma (../HLS/symmetrical_fir_filter.cpp:43:19)
+INFO: [HLS 214-291] Loop 'Shift_Loop' is marked as complete unroll implied by the pipeline pragma (../HLS/symmetrical_fir_filter.cpp:32:5)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_43_1' (../HLS/symmetrical_fir_filter.cpp:43:19) in function 'fir_optimized' completely with a factor of 23 (../HLS/symmetrical_fir_filter.cpp:9:0)
+INFO: [HLS 214-186] Unrolling loop 'Shift_Loop' (../HLS/symmetrical_fir_filter.cpp:32:5) in function 'fir_optimized' completely with a factor of 46 (../HLS/symmetrical_fir_filter.cpp:9:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZZ13fir_optimizedPiiE9shift_reg': Complete partitioning on dimension 1. (../HLS/symmetrical_fir_filter.cpp:24:0)
 INFO-FLOW: DBG:PUTS: copy_raw_kernel_xml ap_link_39: kernel.xml not generated: C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/kernel.internal.xml
-INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 7.275 seconds; current allocated memory: 161.699 MB.
-INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 161.699 MB.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 9.2 seconds; current allocated memory: 161.625 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.002 seconds; current allocated memory: 161.625 MB.
 Execute       opt_and_import_c a -opt_level=2 -skip_syncheck=0 -ng=0 -keep_printf=0 
 Execute         cleanup_all_models 
 INFO: [HLS 200-10] Starting code transformations ...
 INFO-FLOW: Running Standard Transforms...
 Execute         transform -hls -share-std-xform -demangle-name -inline-byval-memcpy -always-inline -promote-dbg-pointer -interface-preproc -mem2reg -scalarrepl -mem2reg -keep-read-access -instcombine -dce -promote-dbg-pointer -bitop-raise -loop-simplify -indvarspre -indvars -loop-simplify -constprop -instcombine -simplifycfg -indvars -simplifycfg -dce -globaldce -basicaa -simplifycfg -mem2reg -globalopt -global-constprop -deadargelim -instcombine -simplifycfg -scalarrepl -instcombine -reassociate -licm -simplifycfg -loop-simplify -indvars -instcombine -simplifycfg -mem2reg -loop-simplify -indvars -instcombine -gvn -gvn -instcombine -adce -break-crit-edges -simplifycfg -loop-delete -global-array-opt -dce -dse -adce -find-syn-modules -top fir_optimized -deadargelim -mem2reg -instcombine -dce -presyn-prepare -interface-preproc -syn-check -check-rec-only -find-region -simplifycfg -func-extr -function-inline -globaldce -mem2reg -instcombine -dce -gvn -globaldce -adce -adse -constprop -instcombine -bit-constprop -instcombine -dce -simplifycfg -bitop-raise -simplifycfg -dce -loop-delete -reassociate -globalopt -global-privatize -mem2reg -dce -global-constprop -pointer-simplify -constprop -dce -promote-dbg-pointer -norm-name C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.0.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.1.bc -f -phase std-opt 
-INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.017 seconds; current allocated memory: 165.113 MB.
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.024 seconds; current allocated memory: 165.094 MB.
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO-FLOW: Checking Synthesizability 1/2..
 Execute         transform -hls -syn-check -check-rec-only -scalarrepl -norm-name -dce -mem2reg -instcombine -directive-preproc -mem2reg -dse -dce -dce -pag -array-normalize -instcombine -dce -array-seg-normalize -instcombine -dce -data-pack -instcombine -dce -inst-simplify -array-flatten -instcombine -dce -array-burst -dce -deadargelim -promote-global-argument -simplifycfg -mem2reg -globaldce -dce -deadargelim -dce -instcombine -function-inline -globaldce -dce -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -dse -adse -instcombine -ptrLegalization -simplifycfg -dce -instcombine -pointer-simplify -ptrArgReplace -dce -instcombine -resolve-double-ptr -scalarrepl -norm-name -dce -mem2reg -instcombine -ptrLegalization -simplifycfg -deadargelim -instcombine -dce -inst-simplify -directive-preproc -mem2reg -dse -dce -globaldce C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.1.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.2.prechk.bc -f 
 INFO-FLOW: Checking Synthesizability 2/2..
 Execute         transform -syn-check C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.2.prechk.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.2.bc -f -phase syn-check 
-INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.035 seconds; current allocated memory: 166.570 MB.
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.041 seconds; current allocated memory: 166.469 MB.
 INFO-FLOW: Compiler optimizing ...
 INFO-FLOW: Share syncheck's 1.bc for syn flow: copy C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.g.1.bc to C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.1.bc
 INFO-FLOW: Presyn 1...
@@ -693,15 +693,15 @@ Execute         transform -hls -tmp C:/workspace/FM-Bistatic-Radar/fir_filter/fi
 INFO-FLOW: Presyn 2...
 Execute         transform -hls -keep-callgraph -scalarrepl -mem2reg -port-alignment -attach-range -dce -pipe-mux-gen -indvars -loop-bound -inst-simplify -instcombine -dce -merge-array-access -mem2reg -dce -clean-region -mergereturn -if-conv -instcombine -dce -constprop -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -gvn -gvn -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -dse -adse -adce -scalarrepl -mem2reg -global-constprop -deadargelim -deadargelim -instcombine -dce -simplifycfg -ptrArgReplace -mem2reg -function-inline -globaldce -mem2reg -instcombine -dce -expr-balance -instcombine -dce -bitwidthmin2 -bitwidthmin2 -interface-preproc -directive-preproc -inst-rectify -instcombine -dce -basicaa -aggr-aa -aggrmodref-aa -aggr-aa -functionattrs -constprop -instcombine -bit-constprop -simplify-global-access -globalopt -globaldce -inst-simplify -instcombine -elimdeaddata -dce -loop-delete -simplifycfg -loop-simplify -barrier -norm-name C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.1.tmp.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.2.bc -f -phase presyn 
 INFO: [XFORM 203-11] Balancing expressions in function 'fir_optimized' (../HLS/symmetrical_fir_filter.cpp:9)...22 expression(s) balanced.
-INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.065 seconds; current allocated memory: 187.246 MB.
+INFO: [HLS 200-111] Finished Loop, function and other optimizations: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.08 seconds; current allocated memory: 187.246 MB.
 Execute         transform -hls -auto-function-inline -globaldce -ptrArgReplace -mem2reg -dce -reset-lda -loop-simplify -indvars -aggr-aa -licm -loop-dep -loop-bound -licm -loop-simplify -loop-sink-hoist -flattenloopnest -array-flatten -gvn -instcombine -dce -array-map -dce -func-legal -gvn -adce -instcombine -cfgopt -simplifycfg-lite -loop-simplify -array-burst -promote-global-argument -dce -array-seg-normalize -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -gvn -gvn -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -dse -adse -adce -licm -inst-simplify -dce -globaldce -instcombine -array-stream -eliminate-keepreads -instcombine -dce -deadargelim -doublePtrSimplify -doublePtrElim -dce -doublePtrSimplify -promote-dbg-pointer -dce -scalarrepl -mem2reg -norm-name -mem2reg -instcombine -dse -adse -adce -ptrLegalization -dce -array-flatten -dce -instcombine -check-doubleptr -loop-rot -constprop -inst-simplify -cfgopt -simplifycfg-lite -loop-simplify -indvars -pointer-simplify -dce -loop-bound -loop-simplify -loop-preproc -constprop -global-constprop -gvn -mem2reg -instcombine -dce -loop-bound -loop-merge -dce -deadargelim -dce -canonicalize-dataflow -dce -deadargelim -globaldce -mem2reg -bram-byte-enable -inst-simplify -inst-rectify -instcombine -adce -deadargelim -load-elim -read-loop-dep -loop-simplify -loop-rewind-sink-hoist -loop-outline -hls-dead-arg-elim -directive-preproc -bitwidthmin2 -bitwidthmin2 -read-loop-dep -interface-preproc -directive-preproc -interface-gen -bram-byte-enable-spec-prop -mul2addshift -deadargelim -inst-simplify -dce -mem2reg -instcombine -gvn -dce -adse -loop-bound -instcombine -cfgopt -simplifycfg-lite -loop-simplify -clean-region -io-protocol -find-region -mem2reg -bitop-raise -complex-op-raise -inst-simplify -inst-rectify -instcombine -gvn -adce -deadargelim -float-op-raise -loop-simplify -phi-opt -bitop-raise -cfgopt -simplifycfg-lite -strip-dead-prototypes -interface-lower -bitop-lower -intrinsic-lower -auto-function-inline -basicaa -aggrmodref-aa -globalsmodref-aa -aggr-aa -inst-simplify -simplifycfg-lite -loop-simplify -mergereturn -inst-simplify -inst-rectify -globaldce -dce -load-elim -bitop-lower -float-op-raise -fma-raise -loop-rewind -pointer-simplify -dce -cfgopt -dce -loop-bound -loop-dep -read-loop-dep -dce -dyn-mem-reuse -dce -recurrence-min -dce -share-scalar-alloca -deadargelim -dce -check-stream -norm-name -legalize -inst-clarity -bitwidth -dce -validate-dataflow -dump-loop-dep-to-ir -check-all-ssdm -drop-inferred-ii -dump-complexity-metric C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.2.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
 Execute           auto_get_db
 INFO-FLOW: Building ssdm...
 Execute         transform -hls -cdfg-build C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.3.bc -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/a.o.3.bc -f -phase build-ssdm 
-INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.081 seconds; current allocated memory: 187.258 MB.
+INFO: [HLS 200-111] Finished Architecture Synthesis: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.095 seconds; current allocated memory: 187.266 MB.
 INFO-FLOW: Finish building internal data model.
-Command       opt_and_import_c done; 0.199 sec.
-Command     elaborate done; 10.393 sec.
+Command       opt_and_import_c done; 0.24 sec.
+Command     elaborate done; 12.545 sec.
 Execute     ap_eval exec zip -j C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/dut.hcp $dbDir/a.o.3.bc $dbDir/${topname}.rtl_wrap.cfg.tcl $dbDir/apatb_${topname}.cpp $dbDir/apatb_${topname}_util.cpp $dbDir/apatb_${topname}_ir.ll $dbDir/mapper_${topname}.cpp $dbDir/top-io-fe.xml $dbDir/kernel.internal.xml $workdir/../hls.app 
 Execute     autosyn -from_csynth_design=1 
 INFO: [HLS 200-10] Starting hardware synthesis ...
@@ -731,9 +731,10 @@ Execute       set_default_model fir_optimized
 Execute       schedule -model fir_optimized 
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-61] Pipelining function 'fir_optimized'.
-INFO: [HLS 200-1470] Pipelining result : Target II = 3, Final II = 3, Depth = 8, function 'fir_optimized'
+INFO: [HLS 200-1470] Pipelining result : Target II = 1, Final II = 1, Depth = 7, function 'fir_optimized'
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.179 seconds; current allocated memory: 187.258 MB.
+Command       schedule done; 0.156 sec.
+INFO: [HLS 200-111] Finished Scheduling: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.275 seconds; current allocated memory: 187.266 MB.
 Execute       syn_report -verbosereport -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.verbose.sched.rpt 
 Execute         list_part -family xc7z020-clg400-1 
 Execute           ap_family_info -name xc7z020-clg400-1 -data names 
@@ -747,7 +748,7 @@ INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111] Finished Binding: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.042 seconds; current allocated memory: 187.258 MB.
+INFO: [HLS 200-111] Finished Binding: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 0.077 seconds; current allocated memory: 187.266 MB.
 Execute       syn_report -verbosereport -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.verbose.bind.rpt 
 Execute         list_part -family xc7z020-clg400-1 
 Execute           ap_family_info -name xc7z020-clg400-1 -data names 
@@ -812,11 +813,14 @@ WARNING: [RTGEN 206-101] Register 'fir_optimized_int_int_shift_reg_2' is power-o
 WARNING: [RTGEN 206-101] Register 'fir_optimized_int_int_shift_reg_1' is power-on initialization.
 WARNING: [RTGEN 206-101] Register 'fir_optimized_int_int_shift_reg' is power-on initialization.
 INFO: [HLS 200-1030] Apply Unified Pipeline Control on module 'fir_optimized' pipeline 'fir_optimized' pipeline type 'function pipeline'
-INFO: [RTGEN 206-100] Generating core module 'mul_32s_11s_32_2_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_10s_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_11s_32_2_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'mul_32s_12s_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_8s_32_2_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'mul_32s_9s_32_2_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'fir_optimized'.
-Command       create_rtl_model done; 1.521 sec.
-INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.572 seconds; current allocated memory: 190.113 MB.
+Command       create_rtl_model done; 1.34 sec.
+INFO: [HLS 200-111] Finished Creating RTL model: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 1.434 seconds; current allocated memory: 190.547 MB.
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.rtl_wrap.cfg.tcl 
 Execute       gen_rtl fir_optimized -istop -style xilinx -f -lang vhdl -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/syn/vhdl/fir_optimized 
 Execute       gen_rtl fir_optimized -istop -style xilinx -f -lang vlog -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/syn/verilog/fir_optimized 
@@ -848,16 +852,25 @@ Execute       sc_get_portdomain fir_optimized
 INFO-FLOW: Model list for RTL component generation: fir_optimized
 INFO-FLOW: Handling components in module [fir_optimized] ... 
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.compgen.tcl 
-INFO-FLOW: Found component fir_optimized_mul_32s_12s_32_2_1.
-INFO-FLOW: Append model fir_optimized_mul_32s_12s_32_2_1
+INFO-FLOW: Found component fir_optimized_mul_32s_9s_32_2_1.
+INFO-FLOW: Append model fir_optimized_mul_32s_9s_32_2_1
+INFO-FLOW: Found component fir_optimized_mul_32s_8s_32_2_1.
+INFO-FLOW: Append model fir_optimized_mul_32s_8s_32_2_1
 INFO-FLOW: Found component fir_optimized_mul_32s_11s_32_2_1.
 INFO-FLOW: Append model fir_optimized_mul_32s_11s_32_2_1
+INFO-FLOW: Found component fir_optimized_mul_32s_12s_32_2_1.
+INFO-FLOW: Append model fir_optimized_mul_32s_12s_32_2_1
+INFO-FLOW: Found component fir_optimized_mul_32s_10s_32_2_1.
+INFO-FLOW: Append model fir_optimized_mul_32s_10s_32_2_1
 INFO-FLOW: Append model fir_optimized
 INFO-FLOW: Generating RTL model list ...
-INFO-FLOW: All models in this session: fir_optimized_mul_32s_12s_32_2_1 fir_optimized_mul_32s_11s_32_2_1 fir_optimized
+INFO-FLOW: All models in this session: fir_optimized_mul_32s_9s_32_2_1 fir_optimized_mul_32s_8s_32_2_1 fir_optimized_mul_32s_11s_32_2_1 fir_optimized_mul_32s_12s_32_2_1 fir_optimized_mul_32s_10s_32_2_1 fir_optimized
 INFO-FLOW: Generating C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/autopilot.rtl.models.txt file...
-INFO-FLOW: To file: write model fir_optimized_mul_32s_12s_32_2_1
+INFO-FLOW: To file: write model fir_optimized_mul_32s_9s_32_2_1
+INFO-FLOW: To file: write model fir_optimized_mul_32s_8s_32_2_1
 INFO-FLOW: To file: write model fir_optimized_mul_32s_11s_32_2_1
+INFO-FLOW: To file: write model fir_optimized_mul_32s_12s_32_2_1
+INFO-FLOW: To file: write model fir_optimized_mul_32s_10s_32_2_1
 INFO-FLOW: To file: write model fir_optimized
 INFO-FLOW: Generating C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/autopilot.rtl.models.tcl file...
 INFO-FLOW: Finished generating RTL model list.
@@ -887,8 +900,11 @@ Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.g
 Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
 Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
 INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
-INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/vhdl' dstVlogDir='C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/vlog' tclDir='C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db' modelList='fir_optimized_mul_32s_12s_32_2_1
+INFO-FLOW: DBG:PROC: ::AESL_AUTOMG::generate_ip_cores gen_sim_model='1' gen_fp_models='0' gen_for_export='0' dstSCDir='' dstVhdlDir='C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/vhdl' dstVlogDir='C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/vlog' tclDir='C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db' modelList='fir_optimized_mul_32s_9s_32_2_1
+fir_optimized_mul_32s_8s_32_2_1
 fir_optimized_mul_32s_11s_32_2_1
+fir_optimized_mul_32s_12s_32_2_1
+fir_optimized_mul_32s_10s_32_2_1
 fir_optimized
 ' expOnly='0'
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
@@ -897,19 +913,22 @@ Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.compgen.tcl 
-INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.467 seconds; current allocated memory: 197.613 MB.
+INFO: [HLS 200-111] Finished Generating all RTL models: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.781 seconds; current allocated memory: 197.957 MB.
 INFO-FLOW: DBG:PROC: ::HLSREPORTS::create_csynth_xml bind_info_var='bind_info' RtlSubPrefix='fir_optimized_' outfile=''
 INFO-FLOW: Running: create_csynth_xml read xml data
 INFO-FLOW: Done: create_csynth_xml read xml data time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml bind info
 INFO-FLOW: Done: create_csynth_xml bind info time: 0 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml config info
-INFO-FLOW: Done: create_csynth_xml config info time: 0.2 seconds per iteration
+INFO-FLOW: Done: create_csynth_xml config info time: 0.3 seconds per iteration
 INFO-FLOW: Running: create_csynth_xml write xml
 INFO-FLOW: Done: create_csynth_xml write xml time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      create_csynth_xml wrote csynth_xml=C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/syn/report/csynth.xml
-INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='fir_optimized_mul_32s_12s_32_2_1
+INFO-FLOW: DBG:PROC: ::AP::DESIGN_DATA::generate_json generate_bd_files='0' generate_xo_files='0' modelList='fir_optimized_mul_32s_9s_32_2_1
+fir_optimized_mul_32s_8s_32_2_1
 fir_optimized_mul_32s_11s_32_2_1
+fir_optimized_mul_32s_12s_32_2_1
+fir_optimized_mul_32s_10s_32_2_1
 fir_optimized
 ' rtl_lang='both' bootstrap_tcl='false' outdir='' outfilename=''
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
@@ -925,19 +944,716 @@ Execute       ap_part_info -name xc7z020-clg400-1 -data info -quiet
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.constraint.tcl 
 Execute       sc_get_clocks fir_optimized 
 Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
-INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST fir_optimized MODULE2INSTS {fir_optimized fir_optimized} INST2MODULE {fir_optimized fir_optimized} INSTDATA {fir_optimized {DEPTH 1 CHILDREN {}}} MODULEDATA {fir_optimized {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_fu_312_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_1_fu_501_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_2_fu_506_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_3_fu_512_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_4_fu_518_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_5_fu_318_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_6_fu_324_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_7_fu_523_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_8_fu_528_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_9_fu_534_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_10_fu_330_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_11_fu_539_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_12_fu_544_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_12 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_13_fu_550_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_13 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U1 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_fu_1018_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_6_fu_1072_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_1 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_11s_32_2_1_U3 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_2 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U1 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_3 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_4 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_11s_32_2_1_U3 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_5 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_7_fu_596_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_10_fu_1088_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_11_fu_885_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_14_fu_907_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_15_fu_913_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_15 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_16_fu_919_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_16 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_17_fu_925_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_17 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_18_fu_931_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_19_fu_937_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_19 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_20_fu_943_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_20 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_21_fu_949_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_21 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_22_fu_955_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_22 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_14_fu_1120_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_17_fu_1136_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_17 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U1 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_6 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln48_18_fu_1241_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE sub_ln48_18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_7 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_11s_32_2_1_U3 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE mul_ln48_8 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln48_38_fu_1219_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:48 VARIABLE add_ln48_38 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 6 BRAM 0 URAM 0}}}}'
+INFO-FLOW: DBG:PROC: ::HLSREPORTS::add_csynth_report_sections bind_info_dict='adapter_nodes {} cache_nodes {} report_dict {TOPINST fir_optimized MODULE2INSTS {fir_optimized fir_optimized} INST2MODULE {fir_optimized fir_optimized} INSTDATA {fir_optimized {DEPTH 1 CHILDREN {}}} MODULEDATA {fir_optimized {BINDINFO {{BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_fu_680_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_1_fu_686_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_1 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_2_fu_692_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_2 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_3_fu_698_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_3 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_4_fu_704_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_4 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_5_fu_710_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_5 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_6_fu_716_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_7_fu_722_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_8_fu_728_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_8 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_9_fu_734_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_9 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_10_fu_740_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_11_fu_746_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_12_fu_752_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_12 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_13_fu_758_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_13 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_9s_32_2_1_U1 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_fu_1040_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_6_fu_1208_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_6 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_8s_32_2_1_U2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_1 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_11s_32_2_1_U3 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_2 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U8 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_3 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_12s_32_2_1_U4 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_4 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_10s_32_2_1_U5 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_5 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_7_fu_927_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_7 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_10_fu_965_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_10 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_11_fu_1136_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_11 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_14_fu_794_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_15_fu_800_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_15 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_16_fu_806_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_16 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_17_fu_812_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_17 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_18_fu_818_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_19_fu_824_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_19 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_20_fu_830_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_20 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_21_fu_836_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_21 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_22_fu_842_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_22 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_14_fu_997_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_14 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_17_fu_1013_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_17 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_8s_32_2_1_U9 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_6 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE sub PRAGMA {} RTLNAME sub_ln49_18_fu_1219_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE sub_ln49_18 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op sub} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_10s_32_2_1_U6 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_7 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL auto LATENCY 1 OPTYPE mul PRAGMA {} RTLNAME mul_32s_11s_32_2_1_U7 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE mul_ln49_8 LOOP {} BUNDLEDNAME {} DSP 2 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op mul} VISIBLE true} {BINDTYPE op ID {} IMPL fabric LATENCY 0 OPTYPE add PRAGMA {} RTLNAME add_ln49_38_fu_1265_p2 SOURCE ../HLS/symmetrical_fir_filter.cpp:49 VARIABLE add_ln49_38 LOOP {} BUNDLEDNAME {} DSP 0 BRAM 0 URAM 0 STORAGESUBTYPE {} DISPNAME {bind_op add} VISIBLE true}} AREA {DSP 18 BRAM 0 URAM 0}}}}'
 INFO-FLOW: DBG:PUTS:      update_csynth_reports json2rpt_hw_sw_interfaces
 INFO-FLOW: Running: gen_csynth_sec_pragma
 INFO-FLOW: Done: gen_csynth_sec_pragma time: 0 seconds per iteration
 INFO-FLOW: DBG:PUTS:      update_csynth_reports wrote xml
 INFO-FLOW: DBG:PUTS:      update_csynth_reports appended to csynth rpt file
-INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 1 seconds. Elapsed time: 0.451 seconds; current allocated memory: 199.492 MB.
+INFO: [HLS 200-111] Finished Updating report files: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.664 seconds; current allocated memory: 199.832 MB.
 INFO: [VHDL 208-304] Generating VHDL RTL for fir_optimized.
 INFO: [VLOG 209-307] Generating Verilog RTL for fir_optimized.
 Execute       syn_report -model fir_optimized -printsummary 
 INFO: [HLS 200-789] **** Estimated Fmax: 144.45 MHz
-Command     autosyn done; 2.625 sec.
-Command   csynth_design done; 13.395 sec.
+Command     autosyn done; 3.137 sec.
+Command   csynth_design done; 16.105 sec.
+Execute   close_project 
+Execute     close_solution 
+Execute       cleanup_all 
+Execute       cleanup_all 
+Execute       source -notrace -encoding utf-8 C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/clock.tcl 
+Execute         source -encoding utf-8 C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8/8.5/msgcat-1.6.1.tm 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute             source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command         ap_source done; 0.131 sec.
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/0compatibility/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/amazon-s3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/asn/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base32/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/base64/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bee/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bench/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/bibtex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cache/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clay/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/clock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cmdline/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/comm/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/control/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/coroutine/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/counter/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/crc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/cron/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/csv/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/debug/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/defer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dicttool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/docstrip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2idx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/doctools2toc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/dtplite/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fileutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ftpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/fumagic/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/generator/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/gpx/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_aycock/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_fa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_me/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/grammar_peg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/hook/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/html/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/htmlparse/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/http/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/httpwget/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ident/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/imap4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/inifile/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/interp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/irc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/javascript/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/jpeg/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/json/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lambda/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/lazyset/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ldap/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/log/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/map/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mapproj/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/markdown/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/math/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md4/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/md5crypt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mime/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/mkdoc/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/multiplexer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/namespacex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ncgi/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nettool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nmea/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nns/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/nntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ntp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oauth/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oodialect/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/oometa/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ooutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/otp/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/page/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pluginmgr/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/png/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pop3d/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/practcl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/processman/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/profiler/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/pt/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rcs/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/report/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/rest/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/ripemd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sasl/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/sha1/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/simulation/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/smtpd/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/snit/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/soundex/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stooop/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/string/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/stringprep/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/struct/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tar/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tepam/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/term/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/textutil/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tie/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tiff/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/tool/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/transfer/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/treeql/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/try/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/udpcluster/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uev/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/units/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uri/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/uuid/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/valtype/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_base/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_core/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/virtchannel_transform/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/websocket/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/wip/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/yaml/pkgIndex.tcl 
+Execute           source C:/Xilinx/2025.1/Vitis/tps/tcl/tcllib2.0/zip/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tdom/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tk8.6/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/opt0.4/pkgIndex.tcl 
+Execute         source C:/Xilinx/2025.1/Vitis/tps/tcl/tcl8.6/pkgs/win/thread2.8.7/pkgIndex.tcl 
+Command       ap_source done; 0.265 sec.
+INFO-FLOW: Workspace C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls opened at Wed Oct 01 19:11:06 -0500 2025
+Execute       source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+Execute       set_part xc7z020-clg400-1 
+Execute         create_platform xc7z020-clg400-1 -board  
+DBG:HLSDevice: Trying to load device library: C:/Xilinx/2025.1/Vitis\lib\win64.o\xv_hlsvwrap.dll
+DBG:HLSDevice: first parts/arch.xml in RDI_DATADIR: C:/Xilinx/2025.1/Vivado/data/parts/arch.xml
+DBG:HLSDevice: init success
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-1'
+Command         create_platform done; 0.549 sec.
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute         ap_part_info -name xc7z020-clg400-1 -data info 
+Execute         config_compile -quiet -complex-mul-dsp=0 
+Command       set_part done; 0.656 sec.
+Execute       send_msg_by_id INFO @200-1505@%s%s default  vivado 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Execute       send_msg_by_id INFO @200-2174@%s%s component C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg 
+INFO: [HLS 200-2174] Applying component config ini file C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg
+Execute       apply_ini C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.file=../HLS/symmetrical_fir_filter.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(9) 
+INFO: [HLS 200-1465] Applying config ini 'syn.file=../HLS/symmetrical_fir_filter.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(9)
+Execute         add_files C:/workspace/FM-Bistatic-Radar/HLS/symmetrical_fir_filter.cpp 
+INFO: [HLS 200-10] Adding design file 'C:/workspace/FM-Bistatic-Radar/HLS/symmetrical_fir_filter.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'tb.file=../HLS/fir_filter_testbench.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(8) 
+INFO: [HLS 200-1465] Applying config ini 'tb.file=../HLS/fir_filter_testbench.cpp' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(8)
+Execute         add_files -tb C:/workspace/FM-Bistatic-Radar/HLS/fir_filter_testbench.cpp 
+INFO: [HLS 200-10] Adding test bench file 'C:/workspace/FM-Bistatic-Radar/HLS/fir_filter_testbench.cpp' to the project
+Execute         send_msg_by_id INFO @200-1465@%s 'syn.top=fir_optimized' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(7) 
+INFO: [HLS 200-1465] Applying config ini 'syn.top=fir_optimized' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(7)
+Execute         set_top fir_optimized 
+Execute         send_msg_by_id INFO @200-1465@%s 'flow_target=vivado' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(4) 
+INFO: [HLS 200-1465] Applying config ini 'flow_target=vivado' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(4)
+Execute         send_msg_by_id INFO @200-1505@%s%s  vivado 
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Execute         send_msg_by_id INFO @200-1465@%s 'part=xc7z020clg400-1' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(1) 
+INFO: [HLS 200-1465] Applying config ini 'part=xc7z020clg400-1' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(1)
+Execute         set_part xc7z020clg400-1 
+Execute           create_platform xc7z020clg400-1 -board  
+Command           create_platform done; 0.108 sec.
+Execute           source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute               source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute             source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+Execute           ap_part_info -name xc7z020-clg400-1 -data info 
+Execute           config_compile -quiet -complex-mul-dsp=0 
+Command         set_part done; 0.208 sec.
+Execute         send_msg_by_id INFO @200-1465@%s 'package.output.format=ip_catalog' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(5) 
+INFO: [HLS 200-1465] Applying config ini 'package.output.format=ip_catalog' from C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg(5)
+Execute         config_export -format=ip_catalog 
+Command       apply_ini done; 0.227 sec.
+Execute       write_component -config C:/workspace/FM-Bistatic-Radar/fir_filter/hls_config.cfg 
+Execute         send_msg_by_id INFO @200-2176@%s C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json 
+INFO: [HLS 200-2176] Writing Vitis IDE component file C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/vitis-comp.json
+Command     open_solution done; 1.19 sec.
+Command   open_component done; 1.192 sec.
+Execute   apply_ini C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/config.cmdline -iscmdline 
+Execute   ::AP::init_summary_file cosim 
+Execute     AP::app_get_file_relativeroot [AP::app_get_root] {}
+Execute   cosim_design 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:PUTS: read_platform_lib C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/common.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op.gen 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/generic/autopilot/interface.gen 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/common/xilinx.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/plb46.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/axi4.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute         source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/saxilite.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/dds_compiler.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/util.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfft.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/ip/xfir.gen 
+Execute       source C:/Xilinx/2025.1/Vitis/common/technology/xilinx/DSP48/dsp48.gen 
+INFO-FLOW: DBG:PUTS:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg400-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info -quiet 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.rtl_wrap.cfg.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/cosimDB.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -Wno-unknown-pragmas -Wno-unknown-pragmas -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ --target=x86_64-w64-windows-gnu -D__USE_XOPEN2K8 -I C:/Xilinx/2025.1/Vitis/include -I include C:/workspace/FM-Bistatic-Radar/HLS/fir_filter_testbench.cpp -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/fir_filter_testbench.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_filter_testbench.cpp.clang.autosim-tb.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_filter_testbench.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/workspace/FM-Bistatic-Radar/HLS/fir_filter_testbench.cpp C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/fir_filter_testbench.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/fir_filter_testbench.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/fir_filter_testbench.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.373 sec.
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+INFO-FLOW: run_clang exec: C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang -fno-builtin-isinf -fno-builtin-isnan -E -DGCC_COMPATIBLE_APINT -DAESL_TB -D__HLS_COSIM__ -D__VITIS_HLS__ --target=x86_64-w64-windows-gnu -D__USE_XOPEN2K8 -I C:/Xilinx/2025.1/Vitis/include -I include C:/workspace/FM-Bistatic-Radar/HLS/symmetrical_fir_filter.cpp -o C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/symmetrical_fir_filter.cpp_pre.cpp -std=gnu++14 -D__DSP48E1__ --sysroot=C:/Xilinx/2025.1/Vitis/tps/mingw/10.0.0/win64.o/nt > C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.cpp.clang.autosim-tb.out.log 2> C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/symmetrical_fir_filter.cpp.clang.autosim-tb.err.log
+INFO-FLOW: TB processing: C:/workspace/FM-Bistatic-Radar/HLS/symmetrical_fir_filter.cpp C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/symmetrical_fir_filter.cpp_pre.cpp
+Execute     clang_tidy xilinx-tb-process -desc tb-process C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/symmetrical_fir_filter.cpp_pre.cpp.tb.cpp std=gnu++14 
+INFO-FLOW: exec C:/Xilinx/2025.1/Vitis/win64/tools/clang-3.9-csynth/bin/clang-tidy -header-filter=.* --checks=-*,xilinx-tb-process -fix-errors C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/./sim/autowrap/testbench/symmetrical_fir_filter.cpp_pre.cpp.tb.cpp -- -std=gnu++14 -fhls -ferror-limit=0
+Command     clang_tidy done; 0.924 sec.
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/global.setting.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.rtl_wrap.cfg.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.rtl_wrap.cfg.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.rtl_wrap.cfg.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg400-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 0.621 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.DependenceCheck.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+Execute     source C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/.autopilot/db/fir_optimized.tbgen.tcl 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source dataflow_monitor_API.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+Command     ap_source done; 51.468 sec.
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+Command   cosim_design done; 62.133 sec.
 Execute   close_project 
 Execute     close_solution 
 Execute       cleanup_all 

@@ -1,6 +1,6 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch CLANG as the compiler.
-   Compiling ../../../../../HLS/fir_filter_testbench.cpp in debug mode
+   Compiling ../../../../../HLS/symmetrical_fir_filter.cpp in debug mode
    Generating csim.exe
 Dinosaur Simulation finished. Results saved to results.txt
 INFO: [SIM 1] CSim done with 0 errors.

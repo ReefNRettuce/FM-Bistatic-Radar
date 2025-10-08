@@ -1,0 +1,25 @@
+#-----------------------------------------------------------
+# xsim v2025.1 (64-bit)
+# SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
+# IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
+# SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
+# Start of session at: Wed Oct  1 19:12:01 2025
+# Process ID         : 4712
+# Current directory  : C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/sim/verilog
+# Command line       : xsim.exe -mode tcl -source {xsim.dir/fir_optimized/xsim_script.tcl}
+# Log file           : C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/sim/verilog/xsim.log
+# Journal file       : C:/workspace/FM-Bistatic-Radar/fir_filter/fir_optimized/hls/sim/verilog\xsim.jou
+# Running On         : BOOK-67GORHUV7Q
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : 13th Gen Intel(R) Core(TM) i7-1360P
+# CPU Frequency      : 2611 MHz
+# CPU Physical cores : 12
+# CPU Logical cores  : 16
+# Host memory        : 16718 MB
+# Swap memory        : 1140 MB
+# Total Virtual      : 17859 MB
+# Available Virtual  : 4572 MB
+#-----------------------------------------------------------
+source xsim.dir/fir_optimized/xsim_script.tcl
+source fir_optimized.tcl

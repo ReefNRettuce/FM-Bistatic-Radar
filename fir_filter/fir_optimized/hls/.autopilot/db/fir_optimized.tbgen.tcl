@@ -54,8 +54,8 @@ set NewPortList {[
 
 set ArgLastReadFirstWriteLatency {
 	fir_optimized {
-		output_r {Type O LastRead -1 FirstWrite 7}
-		input_r {Type I LastRead 1 FirstWrite -1}
+		output_r {Type O LastRead -1 FirstWrite 6}
+		input_r {Type I LastRead 0 FirstWrite -1}
 		p_ZZ13fir_optimizedPiiE9shift_reg_45 {Type IO LastRead -1 FirstWrite -1}
 		p_ZZ13fir_optimizedPiiE9shift_reg_44 {Type IO LastRead -1 FirstWrite -1}
 		p_ZZ13fir_optimizedPiiE9shift_reg_43 {Type IO LastRead -1 FirstWrite -1}
@@ -106,8 +106,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "7", "Max" : "7"}
-	, {"Name" : "Interval", "Min" : "3", "Max" : "3"}
+	{"Name" : "Latency", "Min" : "6", "Max" : "6"}
+	, {"Name" : "Interval", "Min" : "1", "Max" : "1"}
 ]}
 
 set PipelineEnableSignalInfo {[

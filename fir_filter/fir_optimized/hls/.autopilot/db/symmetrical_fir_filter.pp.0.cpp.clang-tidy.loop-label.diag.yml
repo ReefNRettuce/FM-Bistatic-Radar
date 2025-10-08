@@ -38,12 +38,12 @@ Diagnostics:
         Length:          0
         ReplacementText: 'VITIS_LOOP_1248_1: '
   - DiagnosticName:  xilinx-label-all-loops
-    Message:         'Added loop label VITIS_LOOP_42_1:  '
-    FileOffset:      42
+    Message:         'Added loop label VITIS_LOOP_43_1:  '
+    FileOffset:      43
     FilePath:        'C:\workspace\FM-Bistatic-Radar\HLS\symmetrical_fir_filter.cpp'
     Replacements:    
       - FilePath:        'C:\workspace\FM-Bistatic-Radar\fir_filter\fir_optimized\hls\.autopilot\db\symmetrical_fir_filter.pp.0.cpp'
-        Offset:          951869
+        Offset:          951870
         Length:          0
-        ReplacementText: 'VITIS_LOOP_42_1: '
+        ReplacementText: 'VITIS_LOOP_43_1: '
 ...

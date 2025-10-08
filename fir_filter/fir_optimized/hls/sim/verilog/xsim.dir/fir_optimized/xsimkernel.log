@@ -1,0 +1,7 @@
+Running: xsim.dir/fir_optimized/xsimk.exe -simmode gui -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=fir_optimized_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -wdb fir_optimized.wdb -simrunnum 0 -socket 61742
+Design successfully loaded
+Design Loading Memory Usage: 19080 KB (Peak: 19080 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 50596 KB (Peak: 50596 KB)
+Simulation CPU Usage: 656 ms

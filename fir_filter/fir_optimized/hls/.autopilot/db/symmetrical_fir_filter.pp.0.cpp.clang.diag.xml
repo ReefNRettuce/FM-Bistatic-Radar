@@ -25,7 +25,7 @@
       <key>filename</key>
       <string>../HLS/symmetrical_fir_filter.cpp</string>
       <key>line</key>
-      <integer>26</integer>
+      <integer>27</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -41,7 +41,7 @@
       <key>filename</key>
       <string>../HLS/symmetrical_fir_filter.cpp</string>
       <key>line</key>
-      <integer>32</integer>
+      <integer>33</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
@@ -57,11 +57,11 @@
       <key>filename</key>
       <string>../HLS/symmetrical_fir_filter.cpp</string>
       <key>line</key>
-      <integer>39</integer>
+      <integer>40</integer>
       <key>column</key>
       <integer>9</integer>
       <key>message</key>
-      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_optimized_XLX_SEP_ PragmaOptions=II=3_XLX_SEP_</string>
+      <string>HLS pragma dump _XLX_SEP_ PragmaIsValid=1_XLX_SEP_ PragmaType=pipeline_XLX_SEP_ PragmaContext=_XLX_SEP_ PragmaFunction=fir_optimized_XLX_SEP_ PragmaOptions=II=1_XLX_SEP_</string>
       <key>ID</key>
       <integer>5471</integer>
       <key>WarningOption</key>

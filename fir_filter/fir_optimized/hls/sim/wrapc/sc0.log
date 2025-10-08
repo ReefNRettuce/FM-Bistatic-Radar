@@ -1,0 +1,6 @@
+   Build using "C:/Xilinx/2025.1/Vitis/win64/tools/vcxx/libexec/clang++"
+   Compiling symmetrical_fir_filter.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir_optimized.cpp
+   Compiling fir_filter_testbench.cpp_pre.cpp.tb.cpp
+   Compiling apatb_fir_optimized_ir.ll
+   Generating cosim.tv.exe
