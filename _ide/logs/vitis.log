@@ -121,3 +121,11 @@
 22:13:59 INFO  : scheduling shutdown timer for 2 seconds ...
 22:14:01 INFO  : Terminating Vitis C++ Server
 22:14:01 INFO  : Vitis C++ Server terminated
+16:55:06 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+16:55:09 INFO  : [INFO]: Initializing repositories
+16:55:09 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+16:55:09 INFO  : Successfully created repository data at C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife4474978323795478969
+16:55:09 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife12442460477330806681 -r C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife4474978323795478969\.repo.yaml
+16:55:10 INFO  : Embedded Template List generated successfully
+16:55:10 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife14168273420158595453 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+16:55:11 INFO  : Embedded Template List generated successfully

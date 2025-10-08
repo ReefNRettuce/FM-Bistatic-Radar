@@ -2,7 +2,6 @@
   "workspaceRoot": "C:\\workspace\\FM-Bistatic-Radar",
   "mapping": {
     "fir_filter\\..\\HLS\\symmetrical_fir_filter.cpp": "fir_filter",
-    "Joint_Process_Estimator\\..\\HLS\\fir_filter_testbench.cpp": "Joint_Process_Estimator",
     "Joint_Process_Estimator\\gradiant_adaptive_lattice.cpp": "Joint_Process_Estimator",
     "Joint_Process_Estimator\\JPE_test_bench.cpp": "Joint_Process_Estimator",
     "Joint_Process_Estimator\\jpe.cpp": "Joint_Process_Estimator",
