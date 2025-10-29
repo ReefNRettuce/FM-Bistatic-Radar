@@ -1,0 +1,26 @@
+[
+  {
+    "directory": "C:\\workspace\\FM-Bistatic-Radar\\joint_process_estimator_v2",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\common\\technology\\autopilot",
+      "-c",
+      "C:\\workspace\\FM-Bistatic-Radar\\joint_process_estimator_v2\\jpe.cpp"
+    ],
+    "file": "C:\\workspace\\FM-Bistatic-Radar\\joint_process_estimator_v2\\jpe.cpp"
+  },
+  {
+    "directory": "C:\\workspace\\FM-Bistatic-Radar\\joint_process_estimator_v2",
+    "arguments": [
+      "C:\\Xilinx\\2025.1\\Vitis\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=C:\\Xilinx\\2025.1\\Vitis\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls-tb",
+      "-hls-sim-headers-dir=C:\\Xilinx\\2025.1\\Vitis\\include",
+      "-c",
+      "C:\\workspace\\FM-Bistatic-Radar\\joint_process_estimator_v2\\fm_bistatic_radar_tb.cpp"
+    ],
+    "file": "C:\\workspace\\FM-Bistatic-Radar\\joint_process_estimator_v2\\fm_bistatic_radar_tb.cpp"
+  }
+]

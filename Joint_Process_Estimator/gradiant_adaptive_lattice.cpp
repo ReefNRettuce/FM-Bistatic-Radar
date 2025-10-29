@@ -2,7 +2,7 @@
 #include <hls_stream.h>
 
 
-void gal_stage(int8_t f_err_inp, int8_t b_err_inp, int8_t &f_err_op, int8_t &b_err_op){
+void gal_stage(){
     /*
     Description: a single stage GAL for use in an FM Bistatic Radar
     Inputs/Outputs
@@ -27,7 +27,7 @@ void gal_stage(int8_t f_err_inp, int8_t b_err_inp, int8_t &f_err_op, int8_t &b_e
     int8_t b_err = b_err_prev;
 
 //CALCULATE STATE: we calculate k_coeff_new, f_err_op, and b_err_op
-    f_err_op = f_err_inp + k_coeff_prev * b_err;
+    f_err_op = f_err_inp - conj(k_coeff_prev) * b_err;
     b_err_op = b_err + f_err_inp * k_coeff;
     int8_t k_coeff_new = k_coeff - (2 * u * b_err * f_err_inp);
     
