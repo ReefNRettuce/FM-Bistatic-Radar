@@ -324,3 +324,12 @@
 20:26:49 INFO  : Embedded Template List generated successfully
 20:26:50 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11674650373731630502 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
 20:26:50 INFO  : Embedded Template List generated successfully
+20:40:26 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar\NLMS_filter
+21:59:23 INFO  : connection terminated
+21:59:23 INFO  : connection terminated
+21:59:23 INFO  : scheduling shutdown timer for 2 seconds ...
+21:59:23 INFO  : scheduling shutdown timer for 2 seconds ...
+21:59:25 INFO  : Terminating Vitis C++ Server
+21:59:25 INFO  : Terminating Vitis C++ Server
+21:59:25 INFO  : Vitis C++ Server terminated
+21:59:25 INFO  : Vitis C++ Server terminated

@@ -1,6 +1,7 @@
 {
   "workspaceRoot": "C:\\workspace\\FM-Bistatic-Radar",
   "mapping": {
+    "NLMS_filter\\NLMS_FILTER.cpp": "NLMS_filter",
     "fir_filter\\..\\HLS\\symmetrical_fir_filter.cpp": "fir_filter",
     "Joint_Process_Estimator\\gradiant_adaptive_lattice.cpp": "Joint_Process_Estimator",
     "joint_process_estimator_v2\\fm_bistatic_radar_tb.cpp": "joint_process_estimator_v2",
@@ -8,6 +9,7 @@
     "Joint_Process_Estimator\\jpe.cpp": "Joint_Process_Estimator",
     "joint_process_estimator_v2\\jpe.cpp": "joint_process_estimator_v2",
     "Joint_Process_Estimator\\NLMS_TDL.cpp": "Joint_Process_Estimator",
+    "NLMS_filter\\NLMS_TB.cpp": "NLMS_filter",
     "fir_filter\\..\\HLS\\fir_filter_testbench.cpp": "fir_filter"
   }
 }
