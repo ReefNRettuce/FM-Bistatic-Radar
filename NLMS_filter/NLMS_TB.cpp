@@ -10,8 +10,8 @@ typedef int coeff_t;
 
 //I will mess with the integer size later
 
-signal_t lms_filter(hls::stream<signal_t> input_signal, hls::stream<signal_t> reference_signal,
-int step_size, hls::stream<signal_t> out_signal, hls::stream<signal_t> error_signal);
+signal_t lms_filter(hls::stream<signal_t> &input_signal, hls::stream<signal_t> &reference_signal,
+double step_size, hls::stream<signal_t> &out_signal, hls::stream<signal_t> &error_signal);
 
 int main() {
     // --- Signal Parameters ---
@@ -53,10 +53,10 @@ int main() {
         reference_baseband[i] = baseband_signal[i] * reference_attenuation_factor;
     }
 
-    hls::stream<signal_t> echo_signal[NUM_SAMPLES];
-    hls::stream<signal_t> reference_signal[NUM_SAMPLES];
-    hls::stream<signal_t> error_signal[NUM_SAMPLES];
-    hls::stream<signal_t> output_signal[NUM_SAMPLES];
+    hls::stream<signal_t> echo_signal;
+    hls::stream<signal_t> reference_signal;
+    hls::stream<signal_t> error_signal;
+    hls::stream<signal_t> output_signal;
     
     //write to the streams
     //Do I use HLS Pragma Dataflow here?
@@ -64,14 +64,18 @@ int main() {
         //we quantize and cast to int in this step
         int temp1 = (signal_t)(reference_baseband[i] * 32768);
         //writing the stream here 
-        echo_signal[i].write(temp1);
+        echo_signal.write(temp1);
 
         int temp2 = (signal_t)(echo_baseband[i] * 32768);
-        reference_signal[i].write(temp2);
-
-        for(int j=0;j<50;j++){
-            lms_filter(echo_signal[i].read(i), reference_signal[i].read(i), 0.01, output_signal[i].write(i), error_signal[i].read(i));
-        }
+        reference_signal.write(temp2);
     }
 
+    //the producer loop has produced the data 
+    //now we need to eat the data. 
+    for(int i=0;i<NUM_SAMPLES;i++){
+        //we pass the echo, reference, step size, and error signal in
+        lms_filter(echo_signal, reference_signal, 0.01, output_signal, error_signal);
+    }
+
+    
 }

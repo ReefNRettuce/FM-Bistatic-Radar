@@ -333,3 +333,25 @@
 21:59:25 INFO  : Terminating Vitis C++ Server
 21:59:25 INFO  : Vitis C++ Server terminated
 21:59:25 INFO  : Vitis C++ Server terminated
+14:46:17 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+14:46:20 INFO  : [INFO]: Initializing repositories
+14:46:20 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+14:46:20 INFO  : Successfully created repository data at C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife1378126044709196574
+14:46:20 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife1104899872032647981 -r C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife1378126044709196574\.repo.yaml
+14:46:21 INFO  : Embedded Template List generated successfully
+14:46:21 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11684125653217944939 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+14:46:22 INFO  : Embedded Template List generated successfully
+16:51:02 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife2632042793789026501 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+16:51:02 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+16:51:03 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+16:51:06 INFO  : Embedded Template List generated successfully
+16:51:06 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife4570725263351000669 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+16:51:08 INFO  : Embedded Template List generated successfully
+17:59:47 INFO  : connection terminated
+17:59:47 INFO  : connection terminated
+17:59:47 INFO  : scheduling shutdown timer for 2 seconds ...
+17:59:47 INFO  : scheduling shutdown timer for 2 seconds ...
+17:59:49 INFO  : Terminating Vitis C++ Server
+17:59:49 INFO  : Terminating Vitis C++ Server
+17:59:49 INFO  : Vitis C++ Server terminated
+17:59:49 INFO  : Vitis C++ Server terminated
