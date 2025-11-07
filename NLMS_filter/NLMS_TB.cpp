@@ -10,7 +10,7 @@ typedef int coeff_t;
 
 //I will mess with the integer size later
 
-signal_t lms_filter(hls::stream<signal_t> &input_signal, hls::stream<signal_t> &reference_signal,
+void lms_filter(hls::stream<signal_t> &input_signal, hls::stream<signal_t> &reference_signal,
 double step_size, hls::stream<signal_t> &out_signal, hls::stream<signal_t> &error_signal);
 
 int main() {

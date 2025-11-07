@@ -27,7 +27,7 @@ typedef int signal_t;
 typedef int data_t;
 typedef int coeff_t;
 
-signal_t lms_filter(hls::stream<signal_t> input_signal, hls::stream<signal_t> reference_signal,
+void lms_filter(hls::stream<signal_t> input_signal, hls::stream<signal_t> reference_signal,
 int step_size, hls::stream<signal_t> out_signal, hls::stream<signal_t> error_signal){
     // should this be void? 
     //okay so what are we doing 
@@ -37,34 +37,48 @@ int step_size, hls::stream<signal_t> out_signal, hls::stream<signal_t> error_sig
     //I declare the varialbes here that only need to be declared once and not 50 times 
     //Add shift register complete pragma here HLS ARRAY PARTITION SHIFT REGISTER COMPLETE
     //each weight has to be updated and multipled by the error of the previous stuff 
-    static data_t weights_shift_register[50] = 0; //filter order is fifty
-    static data_t output_temp = 0;
+    static data_t weights_shift_register[50] = {0}; //filter order is fifty
+    static signal_t output_temp = 0;
     static data_t input_temp = 0;
     static data_t temp = 0;
+    static signal_t error_temp = 0;
     
     //read the streams 
     //initiliaze the first value
-    
-    
-    
-    for(i=1;i<NUM_SAMPLES;i++){
-        //pragma use a different one pipeline? 
+Output_Loop:
 
-        //step 1
-        int input_temp = input_signal.read();
-        
-        for(n=0;n<50;n++){
+    for(int n=0;n<50;n++){
             //pragma unroll full
             //this is my mulitply accumulate loop
             //calculate the output
             //for value one do this outside the loop
-            temp = input_temp * weights_shift_register[i];
+            temp = input_temp * weights_shift_register[n];
             output_temp = output_temp + temp;
-            temp =0; // do I need this? 
-            //this is my multiply accumulate loop.
         }
+    output_temp = out_signal.write();
+
+    //reset output_temp for next sample 
+    output_temp = 0;
+
+Error_Loop: 
+    //not really loops but whatever
+    signal_t desired_signal = reference_signal.read();
+
+    for(int n=0;n<50;n++){
+
+        //pragma unroll full
+        error_signal = desired_signal - error_signal;
     }
 
+Update_Loop: 
 
-    //write to the streams
+    weights_shift_register[0] = 0 + (( 2*error_signal*input_signal.read() ) << 7);
+
+    for (int n=1;n<50;n++){
+        //pragma unroll full
+        weights_shift_register[n] = weights_shift_register[n-1] + (( 2*error_signal*input_signal.read() ) << 7);
+    }
+
+//brain done do later.
 }
+
