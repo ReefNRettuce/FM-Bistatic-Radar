@@ -401,3 +401,86 @@
 18:50:17 INFO  : scheduling shutdown timer for 2 seconds ...
 18:50:19 INFO  : Terminating Vitis C++ Server
 18:50:19 INFO  : Vitis C++ Server terminated
+22:00:58 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+22:00:58 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+22:01:02 INFO  : [INFO]: Initializing repositories
+22:01:02 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+22:01:02 INFO  : Successfully created repository data at C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11664924133612418357
+22:01:02 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife3539894332047309138 -r C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11664924133612418357\.repo.yaml
+22:01:03 INFO  : Embedded Template List generated successfully
+22:01:03 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife7625694315274356855 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+22:01:05 INFO  : Embedded Template List generated successfully
+22:45:37 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife17114084744443408404 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+22:45:39 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+22:45:39 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+22:45:40 INFO  : connection terminated
+22:45:42 INFO  : Embedded Template List generated successfully
+22:45:42 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife338893936674913025 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+22:45:44 INFO  : Embedded Template List generated successfully
+23:28:15 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife14296717606931206580 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+23:28:16 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+23:28:16 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+23:28:16 INFO  : Embedded Template List generated successfully
+23:28:16 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife10358613551485005858 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+23:28:17 INFO  : Embedded Template List generated successfully
+00:07:32 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife12579691203556466469 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+00:07:32 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+00:07:32 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+00:07:33 INFO  : Embedded Template List generated successfully
+00:07:33 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife12300894278083531656 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+00:07:33 INFO  : Embedded Template List generated successfully
+01:33:35 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+01:33:35 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+01:33:36 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11325541066291178408 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:33:42 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+01:33:42 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+01:33:59 INFO  : Embedded Template List generated successfully
+01:33:59 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife8624742162504290583 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:34:08 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+01:34:08 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+01:34:14 INFO  : Embedded Template List generated successfully
+01:34:14 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife1074649593137899583 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:34:26 INFO  : Embedded Template List generated successfully
+01:34:26 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife867088560855485736 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:34:32 INFO  : Embedded Template List generated successfully
+01:34:32 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife17529302698236962592 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:34:41 INFO  : Embedded Template List generated successfully
+01:34:41 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife9874837816553038790 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:34:48 INFO  : Embedded Template List generated successfully
+01:37:46 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+01:37:46 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+01:37:46 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife16673496454440726462 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:37:56 INFO  : Embedded Template List generated successfully
+01:37:56 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife16388007305790659348 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+01:37:58 INFO  : Embedded Template List generated successfully
+08:57:38 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife8051896013259245963 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+08:57:39 INFO  : connection ready
+08:57:39 INFO  : Embedded Template List generated successfully
+08:57:39 INFO  : cmd.exe, /C, empyro.bat repo -st  C:\Xilinx\2025.1\Vitis\data\embeddedsw
+08:57:47 INFO  : [INFO]: Initializing repositories
+08:57:47 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+08:57:47 INFO  : Successfully created repository data at C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife8289872027454828480
+08:57:47 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11559842893477674280 -r C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife8289872027454828480\.repo.yaml
+08:57:47 INFO  : Embedded Template List generated successfully
+08:58:10 INFO  : cmd.exe, /C, empyro.bat repo -st  C:\Xilinx\2025.1\Vitis\data\embeddedsw
+08:58:11 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+08:58:11 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+08:58:14 INFO  : [INFO]: Initializing repositories
+08:58:14 INFO  : [INFO]: Successfully set the EmbeddedSW path, refer .repo.yaml for more details.
+08:58:14 INFO  : Successfully created repository data at C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife8209896578677927927
+08:58:14 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife142176942325683405 -r C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife8209896578677927927\.repo.yaml
+08:58:15 INFO  : Embedded Template List generated successfully
+08:58:15 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife4043133727867972103 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+08:58:16 INFO  : Embedded Template List generated successfully
+09:46:54 INFO  : connection terminated
+21:20:58 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife11662460038695528369 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+21:20:58 INFO  : updated workspace path: C:\workspace\FM-Bistatic-Radar
+21:20:58 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar
+21:21:03 INFO  : Embedded Template List generated successfully
+21:21:03 INFO  : cmd.exe, /C, empyro.bat get_template_data -d C:\Users\leife\AppData\Local\Temp\rigel_lopper_leife18184870944163834487 -r C:\workspace\FM-Bistatic-Radar\_ide\.wsdata\.repo.yaml
+21:21:05 INFO  : Embedded Template List generated successfully
+21:53:11 INFO  : created .gitignore file for the project C:\workspace\FM-Bistatic-Radar\gradiant_adaptive_lattice
+21:54:20 INFO  : connection terminated
+21:54:20 INFO  : scheduling shutdown timer for 2 seconds ...
+21:54:22 INFO  : Terminating Vitis C++ Server
+21:54:22 INFO  : Vitis C++ Server terminated

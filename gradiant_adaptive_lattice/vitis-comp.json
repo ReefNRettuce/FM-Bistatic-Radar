@@ -1,0 +1,13 @@
+{
+  "name": "gradiant_adaptive_lattice",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "gradiant_adaptive_lattice"
+  },
+  "useSysrootToolchain": false,
+  "template": "empty_hls_component"
+}
